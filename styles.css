@@ -1,0 +1,64 @@
+body {
+  font-family: Rubik Doodle Shadow, Arial, Helvetica, sans-serif;
+  background-color: rgb(23, 20, 23);
+  color: white;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  position: relative;
+  height: 30px;
+  background-color: gray;
+  border-radius: 50px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  border-radius: 50px;
+  /* background-color: #4caf50; */
+  background-image: 
+  linear-gradient(
+    -45deg,
+    white 25%, 
+    red 25%, 
+    red 50%, 
+    white 50%, 
+    white 75%,
+    red 75%, 
+    red);
+  background-size: 50px 50px;
+
+  animation: load 1s infinite linear;
+}
+
+.progress-text {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+img{
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+@keyframes load {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px, 100px;
+  }
+}
